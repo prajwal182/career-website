@@ -9,16 +9,18 @@
             height: 360px;
             width: 100%;
             object-fit: cover;
-
+            margin-bottom: 16px;
         }
     </style>
     
 </head>
 <body>
+    {% include 'nav.html' %}
+    <img class="img-fluid" id="banner" src="static/banner.jpg" alt="carer img">
+    
     <div class="container">
     <h1 class="text-center mt-4">Tech Careers</h1>
-    <img class="img-fluid" id="banner" src="static/banner.jpg" alt="carer img">
-    <h2 class="text-center mt-4">About Us</h2>
+    
     <p class="lead">
         Lorem ipsum odor amet, consectetuer adipiscing elit.
         Aliquam purus pretium mattis suspendisse a?
@@ -37,6 +39,7 @@
         <button class="btn btn-primary btn-lg">Contact Here</button>
         <p>Copyright 2025, Careers</p>
     </div>
-</div>
+    {% include 'footer.html' %}
+
 </body>
 </html>
