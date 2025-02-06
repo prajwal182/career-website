@@ -21,8 +21,8 @@
     <div class="container">
     <h1 class="text-center mt-4">{{company_name}} Careers</h1>
     
-    <div class="row">
-        <div class="col-6">
+    <div class="row" style="margin-bottom: 18px;">
+        <div class="col-md-7">
             <p class="lead">
                 Lorem ipsum odor amet, consectetuer adipiscing elit.
                 Aliquam purus pretium mattis suspendisse a?
@@ -32,8 +32,8 @@
                 Erat class tortor porta tristique ornare parturient maximus.
             </p>
         </div>
-        <div class="col-6">
-            <img src="/static/people-working.jpg" style="height: 320px;">
+        <div class="d-none d-md-block col-md-5">
+            <img src="/static/people-working.jpg" style="height: 320px; border-radius: 6px;">
         </div>
     </div>
     <h2 class="text-center mt-4">Job Openings</h2>
@@ -43,7 +43,7 @@
         {% endfor %}
     </div><br>
     <div class="text-center">
-        <button class="btn btn-primary btn-lg" style="font-family: fantasys;">Contact Here</button><br>
+        <a href="mailto:hello@career.co?subject=Question%20about%20job%20openings&body=My%20name%3A%20%3Cyour%20name%3E%0D%0AMy%20question%3A%20%3Center%20question%20here%3E" class="btn btn-primary btn-lg" style="font-family: fantasys;">Contact Here</a><br>
         <p>Copyright 2025, Careers</p>
     </div>
     {% include 'footer.html' %}
