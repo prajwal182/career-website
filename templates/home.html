@@ -19,24 +19,31 @@
     <img class="img-fluid" id="banner" src="static/banner.jpg" alt="career img">
     
     <div class="container">
-    <h1 class="text-center mt-4">Tech Careers</h1>
+    <h1 class="text-center mt-4">{{company_name}} Careers</h1>
     
-    <p class="lead">
-        Lorem ipsum odor amet, consectetuer adipiscing elit.
-        Aliquam purus pretium mattis suspendisse a?
-        Class mattis suscipit mus platea nisi laoreet posuere diam.
-        Velit venenatis pellentesque hac rhoncus euismod dolor faucibus.
-        Facilisi ut class in vivamus commodo rhoncus molestie.
-        Erat class tortor porta tristique ornare parturient maximus.
-    </p>
+    <div class="row">
+        <div class="col-6">
+            <p class="lead">
+                Lorem ipsum odor amet, consectetuer adipiscing elit.
+                Aliquam purus pretium mattis suspendisse a?
+                Class mattis suscipit mus platea nisi laoreet posuere diam.
+                Velit venenatis pellentesque hac rhoncus euismod dolor faucibus.
+                Facilisi ut class in vivamus commodo rhoncus molestie.
+                Erat class tortor porta tristique ornare parturient maximus.
+            </p>
+        </div>
+        <div class="col-6">
+            <img src="/static/people-working.jpg" style="height: 320px;">
+        </div>
+    </div>
     <h2 class="text-center mt-4">Job Openings</h2>
     <div>
         {% for job in jobs %}
             {% include 'jobitem.html' %}
         {% endfor %}
-    </div>
+    </div><br>
     <div class="text-center">
-        <button class="btn btn-primary btn-lg">Contact Here</button>
+        <button class="btn btn-primary btn-lg" style="font-family: fantasys;">Contact Here</button><br>
         <p>Copyright 2025, Careers</p>
     </div>
     {% include 'footer.html' %}

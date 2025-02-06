@@ -18,7 +18,7 @@ JOBS = [
     {
         'id': 3,
         'title':'Frontend Engg',
-        'location':'Remote',
+        'location':'Remote'
         
     },
     {
@@ -31,7 +31,7 @@ JOBS = [
 
 @app.route("/")
 def helloworld():
-    return render_template('home.html', jobs=JOBS)
+    return render_template('home.html', jobs=JOBS, company_name ='Tech')
 
 @app.route("/api/jobs")
 def job_lists():
