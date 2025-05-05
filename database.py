@@ -1,8 +1,11 @@
+import os
 from sqlalchemy import create_engine, text
+from dotenv import load_dotenv
+load_dotenv()
 
-# Define your database connection URL
-# Replace the placeholders with your actual database credentials
-db_url = "mysql+pymysql://avnadmin:password@host:port/databasename"
+# Load from environment variable
+db_url = os.environ.get("DATABASE_URL")
+
 
 
 
