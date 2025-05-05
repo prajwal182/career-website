@@ -2,10 +2,24 @@ from sqlalchemy import create_engine, text
 
 # Define your database connection URL
 # Replace the placeholders with your actual database credentials
-db_url = "xyz"
+db_url = "mysql+pymysql://avnadmin:password@host:port/databasename"
+
+
 
 # Create an SQLAlchemy engine
 engine = create_engine(db_url)
+
+
+# You must have `mysql-connector-python` installed
+# pip install mysql-connector-python
+
+engine = create_engine(
+    db_url,
+    connect_args={
+        "ssl_disabled": False  # Enforces SSL usage
+    }
+)
+
 
 # Using engine.connect() to establish a connection
 #with engine.connect() as conn:
