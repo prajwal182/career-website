@@ -1,0 +1,11 @@
+# Exported from Render on 2025-05-05T01:35:41Z
+services:
+- type: web
+  name: career-website
+  runtime: python
+  repo: https://github.com/prajwal182/career-website
+  plan: free
+  region: oregon
+  buildCommand: pip install -r requirements.txt
+  startCommand: gunicorn app:app
+version: "1"
